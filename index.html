@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hantie se Tuisgebak · Home Baker</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Hidden anchor for scrolling to top -->
+    <div id="top"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+    <a href="#top" class="logo-link" aria-label="Scroll to top">
+        <img src="MainLogo.png" alt="Hantiese Home Baker Logo" class="logo-img" />
+        <span class="logo-text">Hantie se Tuisgebak</span>
+    </a>
+</div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#menu">Fresh bakes</a></li>
+                <li><a href="#about">Meet Hantie</a></li>
+				<li><a href="#gallery">From Hantie's Kitchen</a></li>
+                <li><a href="#contact" class="btn-small">Get in touch</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero container">
+		<!-- BIG LOGO ON MAIN PAGE -->
+		<div class="hero-logo">
+			<img src="MainLogo.png" alt="Hantiese Home Baker - Main Logo" class="hero-logo-img" />
+		</div>
+
+		<div class="hero-badge"><i class="fas fa-heart" style="margin-right:6px;"></i>Klein Bondels • Groot Smaak • Vars Gebak • Tuisgemaak</div>
+		<h2>Homemade <span>comfort</span>,<br/>one bite at a time.</h2>
+		<p>Traditional South African treats, baked fresh from Hantie's kitchen. 
+		Koeksisters, melktert, cupcakes &amp; more. Made just like Ouma used to.</p>
+		<div class="hero-actions">
+			<a href="#menu" class="btn">See the menu</a>
+			<a href="#contact" class="btn btn-outline">Get in touch</a>
+		</div>
+	</section>
+
+    <!-- ===== MENU ===== -->
+<section class="menu-section container" id="menu">
+    <h2 class="section-title">Fresh <span style="font-weight:600;color:#c77d4a;">bakes</span></h2>
+    <p class="section-sub">Made to order — please allow 24 hours' notice.</p>
+
+    <div class="product-grid" id="productGrid">
+        <!-- Koeksisters -->
+<div class="product-card" data-product="Koeksisters" data-price="55" data-unit="per dozen">
+    <div class="product-icon product-icon-logo">
+        <div class="flip-container">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="Logo006.png" alt="Koeksisters Logo" class="product-logo-icon" />
+                </div>
+                <div class="flip-back">
+                    <img src="004.jpeg" alt="Koeksisters" class="product-logo-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Koeksisters</h3>
+    <div class="note">Price on request</div>
+    <div class="note">per dozen</div>
+    <!-- Quantity Controls -->
+    <div class="qty-controls">
+        <button class="qty-btn qty-minus" type="button">−</button>
+        <span class="qty-display">0</span>
+        <button class="qty-btn qty-plus" type="button">+</button>
+    </div>
+</div>
+
+        <!-- Melktert -->
+<div class="product-card" data-product="Melktert" data-price="70" data-unit="each">
+    <div class="product-icon product-icon-logo">
+        <div class="flip-container">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="Logo001.png" alt="Melktert Logo" class="product-logo-icon" />
+                </div>
+                <div class="flip-back">
+                    <img src="006.png" alt="Melktert" class="product-logo-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Melktert</h3>
+    <div class="note">Price on request</div>
+    <div class="qty-controls">
+        <button class="qty-btn qty-minus" type="button">−</button>
+        <span class="qty-display">0</span>
+        <button class="qty-btn qty-plus" type="button">+</button>
+    </div>
+</div>
+
+        <!-- Meermin Cupcakes -->
+<div class="product-card" data-product="Meermin Cupcakes" data-price="15" data-unit="each">
+    <div class="product-icon product-icon-logo">
+        <div class="flip-container">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="Logo008.png" alt="Meermin Cupcakes Logo" class="product-logo-icon" />
+                </div>
+                <div class="flip-back">
+                    <img src="001.jpeg" alt="Meermin Cupcakes" class="product-logo-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Meermin Cupcakes</h3>
+    <div class="note">Price on request</div>
+    <div class="qty-controls">
+        <button class="qty-btn qty-minus" type="button">−</button>
+        <span class="qty-display">0</span>
+        <button class="qty-btn qty-plus" type="button">+</button>
+    </div>
+</div>
+
+        <!-- Cupcakes with icing -->
+<div class="product-card" data-product="Cupcakes met Icing" data-price="10" data-unit="each">
+    <div class="product-icon product-icon-logo">
+        <div class="flip-container">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="007.png" alt="Cupcakes met Icing Logo" class="product-logo-icon" />
+                </div>
+                <div class="flip-back">
+                    <img src="002.jpeg" alt="Cupcakes met Icing" class="product-logo-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Cupcakes met Icing</h3>
+    <div class="note">Price on request</div>
+    <div class="qty-controls">
+        <button class="qty-btn qty-minus" type="button">−</button>
+        <span class="qty-display">0</span>
+        <button class="qty-btn qty-plus" type="button">+</button>
+    </div>
+</div>
+
+        <!-- 5L mixed cookies -->
+<div class="product-card" data-product="Gemengde Koekies" data-price="250" data-unit="5 liter emmer">
+    <div class="product-icon product-icon-logo">
+        <div class="flip-container">
+            <div class="flip-inner">
+                <div class="flip-front">
+                    <img src="Logo005.png" alt="Hantiese Logo" class="product-logo-icon" />
+                </div>
+                <div class="flip-back">
+                    <img src="003.jpeg" alt="Gemengde Koekies" class="product-logo-icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>Gemengde Koekies</h3>
+            <div class="note">Price on request</div>
+    <div class="note">5 liter emmer</div>
+    <div class="qty-controls">
+        <button class="qty-btn qty-minus" type="button">−</button>
+        <span class="qty-display">0</span>
+        <button class="qty-btn qty-plus" type="button">+</button>
+    </div>
+</div>
+
+        <!-- Beskuit -->
+        <div class="product-card" data-product="Beskuit" data-price="0" data-unit="Price on request">
+            <div class="product-icon product-icon-logo">
+                <div class="flip-container">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="Logo002.png" alt="Beskuit Logo" class="product-logo-icon" />
+                        </div>
+                        <div class="flip-back">
+                            <img src="007.jpeg" alt="Beskuit" class="product-logo-icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Beskuit</h3>
+            <div class="note">Price on request</div>
+            <div class="qty-controls">
+                <button class="qty-btn qty-minus" type="button">−</button>
+                <span class="qty-display">0</span>
+                <button class="qty-btn qty-plus" type="button">+</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Quote Summary & Request Quote Button -->
+<div class="quote-section" id="quoteSection">
+    <div class="quote-summary" id="quoteSummary">
+        <div class="quote-header">
+            <h3><i class="fas fa-shopping-cart"></i> Your Quote</h3>
+            <span class="quote-count" id="quoteCount">0 items</span>
+        </div>
+        <ul class="quote-items" id="quoteItems">
+            <li class="empty-quote-msg">No items added yet. Add some treats!</li>
+        </ul>
+        
+        <!-- Personal Details Section -->
+        <div class="quote-personal-details" id="personalDetails">
+            <h4><i class="fas fa-user"></i> Your Details</h4>
+            <div class="personal-details-grid">
+    <div class="personal-field">
+        <label for="quoteName">Name *</label>
+        <input type="text" id="quoteName" placeholder="e.g. Janine" />
+    </div>
+    <div class="personal-field">
+        <label for="quoteSurname">Surname *</label>
+        <input type="text" id="quoteSurname" placeholder="e.g. Smith" />
+    </div>
+    <div class="personal-field">
+        <label for="quotePhone">Phone Number *</label>
+        <input type="tel" id="quotePhone" placeholder="e.g. 082 123 4567" />
+    </div>
+    <div class="personal-field">
+        <label for="quoteEmail">Email</label>
+        <input type="email" id="quoteEmail" placeholder="e.g. janine@example.com" />
+    </div>
+    <div class="personal-field full-width">
+        <label for="quoteArea">Area / Suburb *</label>
+        <input type="text" id="quoteArea" placeholder="e.g. Witbank, Cape Town, etc." />
+    </div>
+    <div class="personal-field full-width">
+        <label for="quoteNotes">Additional Notes / Message</label>
+        <textarea id="quoteNotes" rows="3" placeholder="Add any special requests, delivery instructions, or extra information here..."></textarea>
+    </div>
+</div>
+        </div>
+        
+        <button class="btn btn-whatsapp-quote" id="whatsappQuoteBtn">
+            <i class="fab fa-whatsapp"></i> Request Quote via WhatsApp
+        </button>
+        <button class="btn btn-clear-quote" id="clearQuoteBtn">
+            <i class="fas fa-trash-alt"></i> Clear
+        </button>
+    </div>
+</div>
+</section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+    <h2>Meet <span>Hantie</span></h2>
+    <p>
+        Hantie is a home baker based in <strong>Witbank / eMalahleni</strong>, 
+        baking traditional South African treats with love and care. 
+        Every koeksister is twisted by hand, every melktert is 
+        filled with custard made from scratch, and every cupcake is iced 
+        with a smile.
+    </p>
+    <p>
+        Baking is her love language and she'd be honoured to bake 
+        something special for you. Whether you're a local or just passing through, 
+        Hantie's kitchen is always ready with something sweet.
+    </p>
+    <div class="signature">— Hantie</div>
+			</div>
+            <div class="about-map">
+		<!-- Replace the src URL below with YOUR Google Maps embed URL -->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229766.9081199771!2d29.058544681350977!3d-25.86592461387598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeaed4f5621cac9%3A0x2566efbdc52aefd6!2seMalahleni!5e0!3m2!1sen!2sza!4v1782407154011!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+	</div>
+        </div>
+    </section>
+	
+	    <!-- ===== GALLERY ===== -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">From <span style="font-weight:600;color:#c77d4a;">Hantie's</span> Kitchen</h2>
+            <p class="section-sub">A peek into the love and care behind every bake</p>
+            
+            <div class="gallery-curve">
+                <!-- Image 1 -->
+                <div class="gallery-item" style="--rotate: -8deg; --offset: -20px; --delay: 0s;">
+                    <img src="001.jpeg" alt="Treat 1" />
+                </div>
+                <!-- Image 2 -->
+                <div class="gallery-item" style="--rotate: -4deg; --offset: -10px; --delay: 0.2s;">
+                    <img src="002.jpeg" alt="Treat 2" />
+                </div>
+                <!-- Image 3 -->
+                <div class="gallery-item" style="--rotate: 0deg; --offset: 0px; --delay: 0.4s;">
+                    <img src="003.jpeg" alt="Treat 3" />
+                </div>
+                <!-- Image 4 -->
+                <div class="gallery-item" style="--rotate: 4deg; --offset: -10px; --delay: 0.6s;">
+                    <img src="004.jpeg" alt="Treat 4" />
+                </div>
+                <!-- Image 5 -->
+                <div class="gallery-item" style="--rotate: 8deg; --offset: -20px; --delay: 0.8s;">
+                    <img src="005.jpeg" alt="Treat 5" />
+                </div>
+                <!-- Image 6 -->
+                <div class="gallery-item" style="--rotate: 2deg; --offset: -30px; --delay: 1.0s;">
+                    <img src="006.png" alt="Treat 6" />
+                </div>
+                <!-- Image 7 -->
+                <div class="gallery-item" style="--rotate: -2deg; --offset: -40px; --delay: 1.2s;">
+                    <img src="007.jpeg" alt="Treat 7" />
+                </div>
+				<!-- Image 8 -->
+                <div class="gallery-item" style="--rotate: -2deg; --offset: -50px; --delay: 1.4s;">
+                    <img src="008.jpeg" alt="Treat 8" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+	<section class="contact-section" id="contact">
+		<div class="container">
+			<h2 class="section-title">Get in <span style="font-weight:600;color:#c77d4a;">touch</span></h2>
+			<p class="section-sub">Have a question or want to place an order? Send Hantie a message!</p>
+
+			<!-- Contact Form (centered, no side cards) -->
+			<form class="contact-form" id="contactForm" action="mailto:hantiese@homebaker.co.za" method="post" enctype="text/plain">
+				<div class="form-group">
+					<label for="name">Your Name *</label>
+					<input type="text" id="name" name="name" placeholder="e.g. Janine" required />
+				</div>
+				<div class="form-group">
+					<label for="email">Your Email *</label>
+					<input type="email" id="email" name="email" placeholder="janine@example.com" required />
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<input type="text" id="subject" name="subject" placeholder="Order inquiry" />
+				</div>
+				<div class="form-group">
+					<label for="message">Message *</label>
+					<textarea id="message" name="body" rows="5" placeholder="Hi Hantie, I'd love to order a dozen koeksisters..." required></textarea>
+				</div>
+				<button type="submit" class="btn" style="width:100%; justify-content:center;">
+					<i class="fas fa-paper-plane" style="margin-right:8px;"></i> Send Message
+				</button>
+				<div id="formFeedback" style="margin-top:1rem; text-align:center; font-weight:500;"></div>
+			</form>
+		</div>
+	</section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="socials">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2026 Hantiese Home Baker &middot; Baked with love in South Africa</p>
+        </div>
+    </footer>
+	
+    <!-- ===== CUSTOM CONFIRM MODAL ===== -->
+<div class="modal-overlay" id="confirmModal">
+    <div class="modal-box">
+        <div class="modal-icon">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <h3 class="modal-title">Clear Quote?</h3>
+        <p class="modal-message">Are you sure you want to clear all items from your quote?</p>
+        <div class="modal-actions">
+            <button class="modal-btn modal-btn-cancel" id="modalCancelBtn">Cancel</button>
+            <button class="modal-btn modal-btn-confirm" id="modalConfirmBtn">Yes, Clear All</button>
+        </div>
+    </div>
+</div>	
+
+<!-- External JavaScript -->
+    <script src="script.js"></script>	
+</body>
+</html>
