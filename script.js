@@ -32,26 +32,55 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 console.log('🍪 Hantiese Home Baker — fresh treats, made with love.');
 
 // ========================================
-// CONTACT FORM HANDLING
+// CONTACT FORM - SEND VIA WHATSAPP
 // ========================================
 const contactForm = document.getElementById('contactForm');
 const formFeedback = document.getElementById('formFeedback');
 
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent any default form submission
+
         const name = document.getElementById('name').value.trim();
         const email = document.getElementById('email').value.trim();
+        const subject = document.getElementById('subject').value.trim();
         const message = document.getElementById('message').value.trim();
 
+        // Validate required fields
         if (!name || !email || !message) {
-            e.preventDefault();
             formFeedback.style.color = '#b02a37';
             formFeedback.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please fill in all required fields (Name, Email, Message).';
             return;
         }
 
+        // Build the WhatsApp message
+        let whatsappMessage = 'Hi Hantie,\n\n';
+        whatsappMessage += 'I have a question or inquiry:\n\n';
+        whatsappMessage += `Name: ${name}\n`;
+        whatsappMessage += `Email: ${email}\n`;
+        if (subject) {
+            whatsappMessage += `Subject: ${subject}\n`;
+        }
+        whatsappMessage += `\nMessage:\n${message}\n\n`;
+        whatsappMessage += 'I look forward to hearing from you!';
+
+        // Encode the message for URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        const phoneNumber = '27611707181'; // WhatsApp number without the +
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Open WhatsApp in a new tab
+        window.open(whatsappUrl, '_blank');
+
+        // Show success feedback
         formFeedback.style.color = '#2b7d4b';
-        formFeedback.innerHTML = '<i class="fas fa-check-circle"></i> Opening your email client... Please send the message from there.';
+        formFeedback.innerHTML = '<i class="fas fa-check-circle"></i> Opening WhatsApp... Please send the message from there.';
+
+        // Optionally clear the form
+        // document.getElementById('name').value = '';
+        // document.getElementById('email').value = '';
+        // document.getElementById('subject').value = '';
+        // document.getElementById('message').value = '';
     });
 }
 
@@ -316,7 +345,7 @@ if (whatsappQuoteBtn) {
 
         const message = getWhatsAppMessage();
         const encodedMessage = encodeURIComponent(message);
-        const phoneNumber = '27765202303';
+        const phoneNumber = '27611707181';
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank');
     });
