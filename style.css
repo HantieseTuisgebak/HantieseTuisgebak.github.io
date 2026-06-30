@@ -475,25 +475,29 @@ footer {
     border-top: 1px solid #f3ede6;
     padding: 2rem 0;
     text-align: center;
-    font-size: 0.9rem;
     color: #8a735c;
 }
 
-footer .socials {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-    margin-bottom: 0.8rem;
+footer .footer-copyright {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
 }
 
-footer .socials a {
+footer .footer-credit {
+    font-size: 0.85rem;
     color: #b07d52;
-    font-size: 1.2rem;
+}
+
+footer .footer-credit a {
+    color: #c77d4a;
+    text-decoration: none;
+    font-weight: 600;
     transition: color 0.2s;
 }
 
-footer .socials a:hover {
-    color: #c77d4a;
+footer .footer-credit a:hover {
+    color: #a86434;
+    text-decoration: underline;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -1176,4 +1180,21 @@ footer .socials a:hover {
         gap: 0.8rem;
         padding: 1rem 0;
     }
+}
+
+/* WhatsApp Submit Button for Contact Form */
+.btn-whatsapp-submit {
+    background: #25D366 !important;
+    color: #fff !important;
+    border: none !important;
+    transition: background 0.2s !important;
+}
+
+.btn-whatsapp-submit:hover {
+    background: #1da851 !important;
+}
+
+.btn-whatsapp-submit i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
 }
