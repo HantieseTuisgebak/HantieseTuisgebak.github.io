@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <!-- Homepage (Main website) -->
+  <!-- Homepage (Single-page application) -->
   <url>
-    <loc>https://www.hantiesetuisgebak.co.za/</loc>
+    <loc>https://hantiesetuisgebak.co.za</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
   
   <!-- Privacy Policy Page -->
   <url>
-    <loc>https://www.hantiesetuisgebak.co.za/privacy-policy.html</loc>
+    <loc>https://hantiesetuisgebak.co.za/privacy-policy.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
